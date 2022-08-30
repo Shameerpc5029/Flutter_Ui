@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/aditional%20information/switch.dart';
+
 import 'package:ui/screens/manageStore/manage_store_screen.dart';
 
 class AdditionScreen extends StatelessWidget {
@@ -30,11 +32,12 @@ class AdditionScreen extends StatelessWidget {
       const Icon(
         Icons.arrow_forward_ios,
       ),
-      const Icon(
-        Icons.toggle_on,
-        color: Colors.blue,
-        size: 40,
-      ),
+      // const Icon(
+      //   Icons.toggle_on,
+      //   color: Colors.blue,
+      //   size: 40,
+      // ),
+      const SwitchBt(),
       null,
       null,
       null,

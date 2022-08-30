@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/aditional%20information/switch.dart';
 
 class Cardlist extends StatelessWidget {
   const Cardlist({Key? key}) : super(key: key);
@@ -80,11 +81,12 @@ class Cardlist extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          Icon(
-                            Icons.toggle_on,
-                            color: Colors.blue,
-                            size: 40,
-                          ),
+                          // Icon(
+                          //   Icons.toggle_on,
+                          //   color: Colors.blue,
+                          //   size: 40,
+                          // ),
+                          SwitchBt(),
                         ],
                       ),
                     ],
