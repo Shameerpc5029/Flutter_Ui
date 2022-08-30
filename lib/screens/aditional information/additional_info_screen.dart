@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/aditional%20information/switch.dart';
+
 import 'package:ui/screens/manageStore/manage_store_screen.dart';
 
 class AdditionScreen extends StatelessWidget {
@@ -24,17 +26,19 @@ class AdditionScreen extends StatelessWidget {
     ];
 
     List<dynamic> trailingIcon = [
-      const Icon(
-        Icons.arrow_forward_ios,
+      IconButton(
+        onPressed: () {},
+        icon: const Icon(
+          Icons.arrow_forward_ios,
+        ),
       ),
-      const Icon(
-        Icons.arrow_forward_ios,
+      IconButton(
+        onPressed: () {},
+        icon: const Icon(
+          Icons.arrow_forward_ios,
+        ),
       ),
-      const Icon(
-        Icons.toggle_on,
-        color: Colors.blue,
-        size: 40,
-      ),
+      const SwitchBt(),
       null,
       null,
       null,
@@ -82,9 +86,23 @@ class AdditionScreen extends StatelessWidget {
           leading: Icon(
             icons[index],
           ),
-          title: Text(
-            text[index],
+          title: Row(
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  text[index],
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ],
           ),
+          // title: Text(
+          //   text[index],
+          // ),
           trailing: trailingIcon[index],
         ),
       ),

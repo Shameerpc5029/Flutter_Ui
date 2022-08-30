@@ -59,19 +59,25 @@ class CustomerDetails extends StatelessWidget {
                 ],
               ),
               Row(
-                children: const [
-                  Icon(
-                    Icons.phone,
-                    size: 35,
-                    color: Colors.blue,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.phone,
+                      size: 35,
+                      color: Colors.blue,
+                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Icon(
-                    Icons.whatsapp,
-                    size: 35,
-                    color: Colors.green,
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.whatsapp,
+                      color: Colors.green,
+                      size: 35,
+                    ),
                   ),
                 ],
               ),
